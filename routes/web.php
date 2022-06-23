@@ -82,4 +82,6 @@ Route::middleware('admin')->group(function(){
     Route::get('/admin/profile', 'AdminController@ProfileAdmin');
     Route::patch('/admin/profile/update', 'AdminController@UpdateAdmin')->name('admin.update');
     Route::get('/admin/logout', 'AdminController@Logout')->name('admin.logout');
+
+    Route::get('/admin/example', 'AdminController@Logout')->name('admin.logout');    
 });
